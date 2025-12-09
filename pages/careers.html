@@ -7,12 +7,45 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/careers.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
+    <link rel="stylesheet" href="../assets/css/skills.css">
+    <link rel="stylesheet" href="../assets/css/tech.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/services-details.css">
+    <link rel="stylesheet" href="../assets/css/careers.css">
 </head>
 
 <body>
 
-    <section include-html="/components/navbar.html"></section>
+        <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand text-opti-dark fw-bold d-flex align-items-center brand-title" href="#">
+                    <img src="../assets/images/navbar/logo.png" alt="arame Logo" class="me-2 brand-logo"> 
+                    AraMe Global
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
+                        <li class="nav-item me-3"><a class="nav-link text-opti-dark active" href="./index.html">HOME</a></li>
+                        <li class="nav-item me-3"><a class="nav-link text-opti-dark" href="./pages/services-details.html">SERVICES</a></li>
+                        <li class="nav-item me-3"><a class="nav-link text-opti-dark active" href="../pages/about-details.html">ABOUT US</a></li>
+                        <li class="nav-item me-3"><a class="nav-link text-opti-dark" href="./pages/careers.html">CAREERS</a></li>
+                        <li class="nav-item me-3"><a class="nav-link text-opti-dark" href="./pages/blog.html">BLOG</a></li>
+                        <li class="nav-item me-3"><a class="nav-link text-opti-dark" href="./pages/contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
         <section id="service-hero">
         <div class="container-xl">
@@ -88,7 +121,113 @@
 
     </div>
 
-    <footer include-html="/components/footer.html"></footer>
+        <!-- Footer  -->
+
+        <footer class="footer bg-dark text-light">
+
+            <!-- Top Section -->
+            <div class="footer-top-section position-relative text-white">
+
+            <!-- Background Image -->
+            <img
+                src="/assets/images/Foorerlayer.jpg"
+                class="footer-bg-img"
+                alt="Wave Background"
+            />
+
+            <div class="container py-5 position-relative z-2">
+
+                <div class="row align-items-center text-center text-lg-start">
+                
+                <!-- Left -->
+                <div class="col-lg-8 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
+
+                    <div>
+                    <p class="h4 fw-semibold mb-1">We’re Delivering the best</p>
+                    <h3 class="display-6 fw-bold">customer Experience</h3>
+                    </div>
+                </div>
+
+                <!-- Right Button -->
+                <div class="col-lg-4 text-center text-lg-end">
+                    <a href="mailto:info@arameglobal.com" class="btn btn-light fw-bold px-4 py-3 rounded-pill">
+                    info@arameglobal.com
+                    </a>
+                </div>
+
+                </div>
+            </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="container py-5 border-bottom border-secondary">
+
+            <div class="row g-4">
+
+                <!-- Brand -->
+                <div class="col-lg-3 col-md-6">
+                <h3 class="fw-bold mb-3 text-white">AraMe Global</h3>
+                <p class="text-muted">Clarity in Purpose, Precision in Code.</p>
+
+                <div class="d-flex gap-3 mt-3">
+
+                    <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+
+                </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-lg-3 col-md-6">
+                <h5 class="fw-semibold text-white mb-3">Useful Links</h5>
+                <ul class="footer-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+                </div>
+
+                <!-- Industries -->
+                <div class="col-lg-3 col-md-6">
+                <h5 class="fw-semibold text-white mb-3">Industries</h5>
+                <ul class="footer-list">
+                    <li><a href="#">Healthcare</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Retail</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Manufacturing</a></li>
+                </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6">
+                <h5 class="fw-semibold text-white mb-3">Contact Information</h5>
+
+                <ul class="footer-contact">
+                    <li><i class="fa fa-phone me-2 text-primary"></i> <a href="tel:+919847847135">+919847847135</a></li>
+                    <li><i class="fa fa-envelope me-2 text-primary"></i> <a href="mailto:info@arameglobal.com">info@arameglobal.com</a></li>
+                    <li class="d-flex">
+                    <i class="fa fa-map-marker-alt me-2 text-primary"></i>
+                    <span>ArameGlobal, Wee Spaces, 1st Floor, Relcon Plaza, Pattom, Thiruvananthapuram, Kerala 695004 India</span>
+                    </li>
+                </ul>
+
+                </div>
+
+            </div>
+            </div>
+
+            <div class="text-center py-3 text-muted small">
+            © Copyrights 2025 AraMe Global All rights reserved.
+            </div>
+
+        </footer>
+
+        <!-- End of footer -->
 
     <script src="/assets/js/includes.js"></script>
 

@@ -115,7 +115,7 @@ height: 80%;
     border-color: var(--opti-blue);
     color: white;
     padding: 0.75rem 2rem;
-    border-radius: 0.3rem;
+    border-radius: .8rem;
     font-weight: 600;
     transition: background-color 0.3s ease;
 }
