@@ -1,0 +1,18 @@
+.brand-title {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.brand-logo {
+    width: 50px;
+}
+
+.text-opti-dark {
+    color: #1a1a2e !important;
+}
+
+.nav-item,
+.dropdown-item {
+    font-size: medium;
+}

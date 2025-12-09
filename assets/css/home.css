@@ -1,0 +1,40 @@
+.hero-section {
+    position: relative;
+    background: #f5fbff;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+/* Diagonal Shape on Right */
+.hero-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    background: #3f6ad8;
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+
+/* Image Wrapper */
+.hero-image-wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Image */
+.hero-image-wrapper .main-img {
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-shape {
+        display: none;
+    }
+}
