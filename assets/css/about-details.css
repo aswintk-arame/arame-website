@@ -160,6 +160,7 @@ body {
     font-weight: 800;
     max-width: 850px;
     line-height: 1.2;
+    margin: auto;
 }
 
 .hero-subtitle {
@@ -167,6 +168,7 @@ body {
     font-size: 1.15rem;
     max-width: 700px;
     opacity: 0.9;
+    margin: auto;
 }
 
 .team-grid-container {
