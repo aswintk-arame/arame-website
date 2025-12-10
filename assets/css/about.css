@@ -123,3 +123,28 @@ height: 80%;
     background-color: #1664b4;
     border-color: #1664b4;
 }
+
+/* Extra Small Screens: Add padding from screen edges */
+@media (max-width: 576px) {
+    .about-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Optional: slightly reduce image wrapper size */
+    .image-wrapper {
+        height: 400px;
+    }
+
+    #mainImageContainer {
+        width: 90%;
+        height: 70%;
+    }
+
+    #secondaryImageContainer {
+        width: 60%;
+        height: 30%;
+        bottom: 5%;
+        right: 0;
+    }
+}

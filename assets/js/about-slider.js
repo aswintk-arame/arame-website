@@ -6,7 +6,7 @@ function initAboutSlider() {
     const mainImageContainer = document.getElementById('mainImageContainer');
     const secondaryImageContainer = document.getElementById('secondaryImageContainer');
 
-    if (!slideContentInner) return; // Safety check
+    if (!slideContentInner) return;
 
     const slides = [
         {

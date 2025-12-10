@@ -1,18 +1,127 @@
-.brand-title {
-    font-size: x-large;
+:root {
+    --primary-color: #1a1a2e;
+    --navbar-bg: #ffffff;
+}
+
+/*  Body  */
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
                  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/*  Navbar  */
+.navbar {
+    background-color: var(--navbar-bg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1rem;
+    z-index: 999;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*  Brand  */
+.brand-title {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
 }
 
 .brand-logo {
     width: 50px;
+    margin-right: 0.5rem;
 }
 
-.text-opti-dark {
-    color: #1a1a2e !important;
+/*  Navbar Links  */
+.nav-link {
+    color: var(--primary-color) !important;
+    font-size: medium;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.nav-item,
+.nav-link:hover,
+.nav-link.active {
+    color: #5a54e9 !important; /* highlight color */
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+/*  Mobile / Collapsed Menu  */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .brand-title {
+        font-size: large;
+    }
+
+    .brand-logo {
+        width: 40px;
+    }
+}
+
+/*  Smaller Mobile Screens  */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .brand-title {
+        font-size: medium;
+    }
+
+    .brand-logo {
+        width: 35px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
+/*  Navbar Toggler  */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='5' y1='7' x2='25' y2='7' stroke='%235a54e9' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='5' y1='15' x2='25' y2='15' stroke='%235a54e9' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='5' y1='23' x2='25' y2='23' stroke='%235a54e9' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/*  Dropdown (if used later)  */
 .dropdown-item {
     font-size: medium;
+    color: var(--primary-color);
+}
+
+.dropdown-item:hover {
+    color: #5a54e9;
+    background-color: transparent;
+}
+
+/*  Body padding if navbar is fixed  */
+body.fixed-navbar-padding {
+    padding-top: 80px; /* adjust to navbar height */
 }

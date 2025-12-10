@@ -21,10 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     const newScript = document.createElement("script");
 
                     if (oldScript.src) {
-                        // External script
                         newScript.src = oldScript.src;
                     } else {
-                        // Inline script
                         newScript.textContent = oldScript.textContent;
                     }
 
