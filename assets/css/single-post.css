@@ -1,0 +1,98 @@
+body {
+    background: url("https://i.pinimg.com/736x/04/eb/8c/04eb8c4bf3cfc98b447847523a48e2cc.jpg");
+    background-size: cover;
+}
+
+/* 1. Article Container Styling */
+.single-post-article {
+    background: #ffffff;
+    padding: 3.5rem 3rem; 
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+    border: 1px solid #e0e7f0;
+}
+
+/* 2. Feature Image Styling */
+.post-header-image {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 2rem !important;
+}
+
+/* 3. Category Badge Styling */
+.category-tag {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+.category-tag:hover {
+    background-color: var(--primary-dark);
+}
+
+/* 4. Post Title Styling */
+#post-title {
+    font-size: 2.5rem; 
+    line-height: 1.25;
+    color: var(--dark-text);
+}
+
+/* 5. Metadata Styling */
+.post-meta-data {
+    color: var(--gray-text) !important;
+    font-size: 0.9rem;
+}
+.post-meta-data i {
+    color: var(--primary);
+}
+
+/* 6. Main Content Body Styling */
+.blog-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #374151;
+}
+
+/* Styling for content elements */
+.blog-content h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--primary-dark);
+}
+.blog-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Style for blockquotes */
+.blog-content blockquote {
+    font-style: italic;
+    border-left: 5px solid var(--primary);
+    background-color: #f7f9fc;
+    padding: 1.5rem;
+    margin: 2.5rem 0;
+    border-radius: 4px;
+    color: #4a5568;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .single-post-article {
+        padding: 1.5rem;
+    }
+    .post-header-image {
+        height: 250px;
+    }
+    #post-title {
+        font-size: 2rem;
+    }
+}
