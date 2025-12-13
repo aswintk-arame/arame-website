@@ -1,80 +1,80 @@
 .hero-section {
-    position: relative;
-    background: #f5fbff;
-    padding: 100px 0;
-    overflow: hidden;
+  position: relative;
+  background: #f5fbff;
+  padding: 100px 0;
+  overflow: hidden;
 }
 
 /* Prevent Bootstrap stacking */
 .hero-section .row {
-    display: flex;
-    flex-wrap: nowrap !important;
+  display: flex;
+  flex-wrap: nowrap !important;
 }
 
 /* Left & right columns ALWAYS 50% */
 .hero-section .col-lg-6 {
-    width: 50% !important;
-    flex: 0 0 50% !important;
-    max-width: 50% !important;
+  width: 50% !important;
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
 }
 
 /* Right blue shape always visible */
 .hero-shape {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 55%;
-    height: 100%;
-    background: #3f6ad8;
-    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background: #3f6ad8;
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 1;
 }
 
 /* Image */
 .hero-image-wrapper {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image-wrapper .main-img {
-    width: 85%;
-    border-radius: 10px;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+  width: 85%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* TEXT SCALING */
 .hero-title {
-    font-size: clamp(1.4rem, 4vw, 3.5rem);
-    font-weight: 700;
+  font-size: clamp(1.4rem, 4vw, 3.5rem);
+  font-weight: 700;
 }
 
 .hero-para {
-    font-size: clamp(0.8rem, 1.2vw, 1.1rem);
-    max-width: 500px;
+  font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+  max-width: 500px;
 }
 
 /*SCALE WHOLE SECTION ON SMALL SCREENS */
 @media (max-width: 992px) {
-    .hero-section {
-        transform: scale();
-        transform-origin: top left;
-        height: auto;
-    }
+  .hero-section {
+    transform: scale();
+    transform-origin: top left;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        transform: scale();
-        transform-origin: top left;
-        height: auto;
-    }
+  .hero-section {
+    transform: scale();
+    transform-origin: top left;
+    height: auto;
+  }
 }
 
 @media (max-width: 576px) {
-    .hero-section {
-        transform: scale();
-        transform-origin: top left;
-    }
+  .hero-section {
+    transform: scale();
+    transform-origin: top left;
+  }
 }
